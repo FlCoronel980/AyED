@@ -1,1 +1,33 @@
+#include <iostream>
 
+#include <iomanip>
+
+using namespace std;
+
+int main()
+
+{
+
+    double n, i;
+
+    double s = 1;
+
+    double pi = 0;
+
+    cout << "Ingrese el numero de iteraciones para encontrar la serie de Leibinz: ";
+
+    cin >> n;
+
+    for(i=1;i<=(n*2);i +=2)
+
+    {
+
+        pi = pi+s*(4/i);
+
+        s = -s;
+
+    }
+
+    cout << "Valor aproximado de Pi = " << pi;
+
+}
