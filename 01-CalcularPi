@@ -27,7 +27,9 @@ int main()
         s = -s;
 
     }
-
+    
+    cout << fixed << setprecision(6);
+    
     cout << "Valor aproximado de Pi = " << pi;
 
 }
